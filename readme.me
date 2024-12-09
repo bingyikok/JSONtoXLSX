@@ -1,0 +1,35 @@
+#1 Verify Python installed
+[CMD LINE]
+python --version
+
+#2 Verify Python extension installed on VS Code
+Crtl + shift + X
+'Python'
+
+#3 Check Python interpreter
+Crtl + shift + P
+'Python: Select Interpreter'
+Select latest version
+
+#4 Add Scripts Directory to windows path
+Search 'View advanced system settings'
+Select Environment Variables
+Under User Variables & Path > Edit > New
+'C:\Users\commonuser\AppData\Roaming\Python\Python312\Scripts'
+Save changes
+
+#5 Reload VS Code
+Crtl + shift + P
+'Reload window'
+
+#6 Install Python packages
+[CMD LINE]
+pip install pandas openpyxl streamlit
+
+#7 Drop .har files to 'DROP HAR FILES'
+
+#8 Run Python script
+[CMD LINE]
+streamlit run convertToExcel.py
+
+#9 Excel .xlsx files will be stored in 'CONVERTED FILES'
